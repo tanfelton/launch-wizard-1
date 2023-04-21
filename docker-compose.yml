@@ -11,7 +11,7 @@ services:
       - 8000
   nginx:
     build: ./nginx
-    web: 970671837538.dkr.ecr.us-east-1.amazonaws.com/launch-wizard-1:launch-wizard-1_nginx
+    web: 970671837538.dkr.ecr.us-east-1.amazonaws.com/launch-wizard-1:django_docker_aws_nginx
     volumes:
       - static_volume:/usr/src/app/static
     ports:
